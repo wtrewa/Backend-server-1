@@ -2,10 +2,10 @@
 const express = require('express');
 const port  = "8080"
 const connect = require('./connection');
-const userRoute = require('../Backend-server-1/Routes/userRoute');
+const userRoute = require('./Routes/userRoute');
 const app = express()
 const cors = require('cors');
-const postRoute = require('../Backend-server-1/Routes/postRoute');
+const postRoute = require('./Routes/postRoute');
 
 app.use(express.json())
 app.use(cors())
